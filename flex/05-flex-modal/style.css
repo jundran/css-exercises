@@ -20,7 +20,12 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  padding: 16px;
+  gap: 16px;
 }
+
 
 .icon {
   color: royalblue;
@@ -33,9 +38,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
 }
 
-.close-button {
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  /* I guessed bold and 20px - changed to match solution */
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container .header .close-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -48,18 +63,22 @@ body {
   justify-content: center;
 }
 
-button {
+.container .text{
+  margin: 16px 0;
+}
+
+.container button {
   padding: 8px 16px;
   border-radius: 8px;
 }
 
-button.continue {
+.container button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
 }
 
-button.cancel {
+.container button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
