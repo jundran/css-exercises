@@ -8,6 +8,10 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+
+  display: grid;
+  grid-template: 110px 110px 550px 110px / 330px 990px;
+  gap: 15px;
 }
 
 .container div {
@@ -21,10 +25,14 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+
+  grid-column: 1 / -1;
 }
 
 .sidebar {
   background-color: #FF7755;
+
+  grid-row: 2 / -2;
 }
 
 .nav {
@@ -44,4 +52,6 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+
+  grid-column: 1 / -1;
 }
