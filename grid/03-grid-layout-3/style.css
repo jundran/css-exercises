@@ -38,9 +38,9 @@
 }
 
 /* New selector */
-.menu ul {
+.menu ul, .nav ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: column;
   list-style: none;
 }
 
@@ -80,13 +80,6 @@
 
 .nav {
   background-color: #FF7755;
-}
-
-/* New selector */
-.nav ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  list-style: none;
 }
 
 .nav ul li {
