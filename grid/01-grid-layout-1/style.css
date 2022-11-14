@@ -12,6 +12,7 @@ body, html {
   display: grid;
   grid-template: 110px 110px 550px 110px / 330px 990px;
   gap: 15px;
+  place-content: center;
 }
 
 .container div {
